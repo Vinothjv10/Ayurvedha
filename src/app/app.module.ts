@@ -8,19 +8,36 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { SignupComponent } from './signup/signup.component';
+
+import {InputTextModule} from 'primeng/inputtext';
+import {PasswordModule} from 'primeng/password';
+import { DividerModule } from "primeng/divider";
+
+import {RatingModule} from 'primeng/rating';
+import { EnquiryComponent } from './enquiry/enquiry.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    ContactUsComponent
+    ContactUsComponent,
+    SignupComponent,
+    EnquiryComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+
+    InputTextModule,
+    PasswordModule,
+    DividerModule,
+
+    RatingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

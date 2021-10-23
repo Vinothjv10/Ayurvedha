@@ -13,6 +13,16 @@
     justify-content: center;
     flex-wrap: wrap;
 }  
+#close{
+    width: 40px;
+    height: 40px;
+    margin: 30px;
+    font-size: 30px;
+    background: none;
+    border-style: none;
+    float: right;
+    cursor: pointer;
+}
 .title{
     margin-top: 26px;
     display: flex;
@@ -25,7 +35,7 @@
     position: relative;
     flex: 1;
     max-width: 410px;
-    height: 785px;
+    height: 900px;
     background: white;
     border-radius: 26px 0px 0px 26px;
     
@@ -33,14 +43,14 @@
 #yoga{
     width: 404px;
     height: 498px;
-    margin-top: 98px;
+    margin-top: 130px;
 }
 
 #row-2{
     position: relative;
     flex: 1;
     max-width: 583px;
-    height: 785px;
+    height: 900px;
     background: #FFFFFF;
     
     border-radius: 0px 26px 26px 0px;
@@ -52,6 +62,9 @@
     font-size: 14px;
     line-height: 21px;
     color: #7D7B7B;
+}
+.input-box{
+    margin: 10px;
 }
 .inputs{
     margin: 100px;
@@ -80,7 +93,7 @@
     border-radius: 5px;
 }
 #password{
-    margin-top: 35px;
+    margin-top: 0px;
 }
 .remember{
     
@@ -109,7 +122,7 @@
     color: #528D23;
 }
 #button{
-    margin: 40px;
+    margin: 30px;
     margin-left: 90px;
     width: 216px;
     height: 50px;
@@ -133,7 +146,7 @@
     flex-wrap: wrap;
 }
 .buttons{
-    margin-top: -50px;
+    padding-top: 60px;
 }
 .button-1{
     font-size: 15px;
@@ -169,7 +182,7 @@
     flex-wrap: wrap;
 }
 .container-3{
-    margin-top: 63px;
+    margin-top: 43px;
     width: 250px;
     height: 24px;
 }
@@ -177,16 +190,59 @@
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
+    text-decoration: none;
     cursor: pointer;
     color: #F45805;
 }
 .error{
     color: red;
 }
-#eye{
-    float: right;
-    padding-right: 10px;
-    margin-top: -35px;
-    position: relative;
-    color: #807b7b ;
+
+@media(max-width:600px)
+{
+    .title{
+        width: 300px;
+        margin-left: 90px;
+    }
+    #row-1{
+        display: none;
+    }
+    .container{
+        background: none;
+    }
+    #row-2{
+        width: 375px;
+    }
+    .title{
+        margin-left: 120px;
+    }
+    .details{
+        margin-left: -70px;
+    }
+    #mail{
+        width: 320px;
+    }
+    #forgot{
+    
+        margin-left: 80px;
+    }
+    #button{
+        margin-left: 50px;
+    }
+    .line{
+        display: none;
+    }
+    .buttons{
+        margin-top: -90px;
+    }
+    .button-1{
+        margin: 30px;
+        margin-left: 80px;
+    }
+    .button-2{
+        margin-left: 80px;
+    }
+    .container-3{
+        margin-left: 50px;
+    }
 }

@@ -14,7 +14,7 @@
                     <div class="input-box">
                         <div class="mail"> Name </div>
 
-                        <input formControlName="name" type="text" id="mail" class="form-control">
+                        <input pInputText formControlName="name" type="text" id="mail" class="form-control">
                         <div *ngIf="name.invalid && (name.touched || name.dirty)">
                             <span class="error" *ngIf="name.errors?.required">*Name is Required.</span>
                             <span class="error" *ngIf="name.errors?.pattern">*Enter only Character.</span>
@@ -24,7 +24,7 @@
                     <div class="input-box">
                         <div class="mail"> Email Address </div>
 
-                        <input formControlName="email" type="text" id="mail" class="form-control">
+                        <input pInputText formControlName="email" type="text" id="mail" class="form-control">
                         <div *ngIf="email.invalid && (email.touched || email.dirty)">
                             <span class="error" *ngIf="email.errors?.required">*Email is Required.</span>
                             <span class="error" *ngIf="email.errors?.email">*Enter valid e-mail id.</span>
@@ -34,7 +34,7 @@
                     <div class="input-box">
                         <div class="mail"> Phone Number </div>
 
-                        <input formControlName="phonenumber" type="text" id="mail" class="form-control">
+                        <input pInputText formControlName="phonenumber" type="text" id="mail" class="form-control">
                         <div *ngIf="phonenumber.invalid && (phonenumber.touched || phonenumber.dirty)">
                             <span class="error" *ngIf="phonenumber.errors?.required">*phonenumber is Required.</span>
                             <span class="error" *ngIf="phonenumber.errors?.pattern">*Enter Only Numbers</span>
@@ -44,13 +44,13 @@
                     <div class="input-box">
                         <div class="mail">  Message </div>
 
-                    <textarea formControlName="message" type="text" id="textarea" class="form-control"> </textarea>
+                    <textarea pInputText formControlName="message" type="text" id="textarea" class="form-control"> </textarea>
                         <div *ngIf="message.invalid && (message.touched || message.dirty)">
                             <span class="error" *ngIf="message.errors?.required">*CompanyName is Required.</span>
                         </div>
                     </div>
 
-                    <button id="button">SEND</button>
+                    <button id="button" [disabled]="registerForm.invalid">SEND</button>
 
                   </form>
 

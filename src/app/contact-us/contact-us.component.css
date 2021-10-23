@@ -17,14 +17,14 @@
 
 #row-1{
    
-    width: 733px;
+    width: 700px;
     height: 930px;
     border-radius: 30px 0px 0px 30px;
 
 }
 .row-1{
    
-    width: 587px;
+    width: 550px;
     height: 930px;
     background: #F7FFF1;
     border-radius: 0px 30px 30px 0px;
@@ -181,4 +181,42 @@
 }
 .error{
     color: red;
+}
+
+@media(max-width:600px){
+    .contact{
+        padding: 0px;
+        background: #c0b5b5 ;
+        font-size: 15px;
+    }
+    .row-1{
+        margin-top: 15px;
+        border-radius: 15px;
+    }
+    #row-1{ 
+        max-width: 400px;
+        border-radius: 15px;
+       
+    } 
+    .head{
+        margin-left: 20px;
+    }
+    #mail{
+        width: 350px;
+    }
+    #img-mini{
+        width: 350px;
+    }
+    #textarea{
+        width: 350px;
+    }
+    .box{
+        margin-left: 30px;
+    }
+    #cvlogo{
+        display: none;
+    }
+    #button{
+        margin-left: 147px;
+    }
 }

@@ -1,0 +1,154 @@
+
+.container{
+    padding: 50px;
+    background: #c0b5b5 ;
+} 
+.row{ 
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}  
+.row-1{
+    width: 712px;
+    height: 937px;
+
+    background: #FFFFFF;
+    box-shadow: 5px 4px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+.row-2{
+    margin: 15px;
+    width: 680px;
+    height: 600px;
+}
+.content{
+    padding-left: 30px;
+}
+#head{
+    padding: 20px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+
+    color: #000000;
+}
+.sub{
+    margin-top: 35px;
+    width: 73px;
+    height: 24px;
+}
+#sub{
+    margin-top: 12px;
+    width: 546px;
+    height: 38px;
+}
+.message{
+    margin-top: 39px;
+    width: 73px;
+    height: 24px;
+}
+#message{
+    margin-top: 12px;
+    width: 546px;
+    height: 271px;
+}
+#button{
+    width: 126px;
+    height: 40px;
+    margin-top: 40px;
+    margin-left: 250px;
+    border-style: none;
+    background: #04C45C;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.27);
+    border-radius: 20px;
+}
+
+#padding{
+    margin-top: 50px;
+}
+.row-4{
+
+    margin: 35px;
+    width: 680px;
+    height: 250px;
+}
+#us{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    /* identical to box height */
+
+
+    color: #000000;
+
+}
+#number{
+    margin-left: 45px;
+    margin-top: -25px;
+}
+.location{
+    margin-top: 20px;
+    margin-left: 10px;
+}
+#details{
+    width: 600px;
+    height: 100px;
+    margin-left: 35px;
+    margin-top: -25px;
+}
+.row-7{
+    margin-top: -50px;
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.row-8{ 
+    margin-top: 34px;
+    width: 41px;
+    height: 41px;
+    background: #C1E6A1;
+    opacity: 0.43;
+    border-radius: 50%;
+    backdrop-filter: blur(50px);
+}
+#img{
+    padding: 10px;
+    opacity: 10;
+    border-style: none;
+}
+#img-1{
+    padding: 10px;
+    padding-left: 15px;
+    opacity: 10;
+    border-style: none;
+}
+.error{
+    color: red;
+}
+
+@media(max-width:600px)
+{
+    .row-1{
+        width: 350px;
+    }
+    #sub{
+        width: 250px;
+    }
+    #message{
+        width: 250px;
+    }
+    #head{
+        width: 300px;
+        height: 50px;
+    }
+    #button{
+        margin-left: 90px;
+    }
+    #details{
+        width: 280px;
+        height: 120px;
+    }
+}

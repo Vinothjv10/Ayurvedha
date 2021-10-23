@@ -1,0 +1,51 @@
+<div class="container">
+    <div class="row">
+        <div class="row-1">
+            <div class="row-2">
+
+                <div id="head">Fill up the form and our team will get back to you in 24 hours</div>
+
+                <div class="row-3">
+                  <form class="details" [formGroup]="registerForm" (ngSubmit)="submitData()" >  
+                    <div class="content">
+                        <div class="sub"> Subject </div>
+                        <input pInputText formControlName="sub" type="text" id="sub" class="form-control">
+                        <div *ngIf="sub.invalid && (sub.touched || sub.dirty)">
+                            <span class="error" *ngIf="sub.errors?.required">*Subject is Required.</span>
+                        </div>
+
+                        <div class="message">Message</div>
+                        <textarea pInputText formControlName="message" type="text" id="message" class="form-control"> </textarea>
+                        <div *ngIf="message.invalid && (message.touched || message.dirty)">
+                            <span class="error" *ngIf="message.errors?.required">*Message is Required.</span>
+                        </div>
+                    </div>
+
+                    <button id="button" [disabled]="registerForm.invalid">SUBMIT</button>
+                    </form>  
+                </div>
+
+            </div>
+
+            <div id="padding" class="row-4">
+                <p id="us">Contact Us</p>
+
+                <div class="phone">
+                    <img id="phone" src="assets/phone.png" alt="">
+                    <div id="number"> 097898 92625</div>
+                </div>
+                <div class="location">
+                    <img id="location" src="assets/location.png" alt="">
+                    <div id="details"> 1/15, Kambar St, PRS Nagar, Gandhi Nagar, Thiruvengadam Nagar, Palavakkam, Chennai, Tamil Nadu 600041</div>
+                </div>
+
+                <div class="row-7">
+                    <div class="row-8" id="img-1"><img src="assets/fb.png" alt=""></div>
+                    <div class="row-8" id="img"><img src="assets/insta.png" alt=""></div>
+                    <div class="row-8" id="img"><img src="assets/twitter.png" alt=""></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

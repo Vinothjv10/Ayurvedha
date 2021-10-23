@@ -1,0 +1,86 @@
+<div class="container">
+    <div class="container-1">
+       <div class="row-1" id="row-1">
+           <img id="yoga" src="assets/yoga.png" >
+       </div>
+       <div class="row-1" id="row-2">
+
+        <button id="close" aria-label="Close" class="dialog__close-btn">X</button>
+
+           <div class="title">  Sign-up  </div>
+
+           <div class="cont">
+                When life is a drag, Yoga is there to lift you up
+           </div>
+
+                                      <!--  Inputs  -->
+
+           <div class="inputs">
+
+            <form class="details" [formGroup]="registerForm" (ngSubmit)="submitData()" > 
+
+                <div class="input-box">
+                    <div class="mail"> Name </div>
+                    <input pInputText formControlName="name" type="text" placeholder="Enter your Full Name" id="mail" class="form-control">
+                    <div *ngIf="name.invalid && (name.touched || name.dirty)">
+                        <span class="error" *ngIf="name.errors?.required">*Name is Required.</span>
+                        <span class="error" *ngIf="name.errors?.pattern">*Enter only Character.</span>
+                     </div>
+                </div> 
+
+
+               <div class="input-box">
+                   <div class="mail"> Email </div>
+                   <input pInputText formControlName="email" type="text" placeholder="Enter your Email Address" id="mail" class="form-control">
+                   <div *ngIf="email.invalid && (email.touched || email.dirty)">
+                        <span class="error" *ngIf="email.errors?.required">*Email is Required.</span>
+                        <span class="error" *ngIf="email.errors?.email">*Enter valid e-mail id.</span>
+                    </div>
+               </div>
+
+               <div class="input-box">
+                    <div class="mail">PhoneNumber </div>
+                    <input pInputText formControlName="phonenumber" type="number" class="form-control" placeholder="Enter your Mobile Number" id="mail" class="form-control">
+                    <div *ngIf="phonenumber.invalid && (phonenumber.touched || phonenumber.dirty)">
+                        <span class="error" *ngIf="phonenumber.errors?.required">*phonenumber is Required.</span>
+                        <span class="error" *ngIf="phonenumber.errors?.pattern">*Enter Only Numbers</span>
+                    </div>
+                </div>
+            
+               <div class="input-box">
+                    <div class="mail" id="password"> Password </div>
+                    <input pInputText formControlName="password" type="password" placeholder="Enter your Password" class="password" id="mail">
+                    <div *ngIf="password.invalid && (password.touched || password.dirty)">
+                        <span class="error" *ngIf="password.errors?.required">*Password is Required.</span>
+                    </div> 
+               </div>
+
+                <button id="button" [disabled]="registerForm.invalid">SIGN-UP</button>
+             
+                <div class="line">
+                   <p class="hr"> </p> <span>or</span> <p class="hr"> </p>
+                </div>
+            </form>
+           </div>
+
+           <div class="buttons">
+
+                <button class="button-1"><img id="img" src="assets/google.png"><span class="align">Sign-up with Google</span> </button>
+
+                <button class="button-2"><img id="img" src="assets/path14.png"> Sign-up with Facebook</button>
+
+           </div>
+
+           <div class="bottom">
+
+               <div class="container-3">
+                   Already a member? <a class="sign-up" routerLink=''> Login </a>
+               </div>
+
+           </div>
+           
+       </div>
+    </div>  
+
+</div>
+
